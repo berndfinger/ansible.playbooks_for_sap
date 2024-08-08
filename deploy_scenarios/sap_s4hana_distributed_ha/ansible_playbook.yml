@@ -534,7 +534,7 @@
       vars:
         sap_swpm_templates_product_input: "{{ sap_swpm_templates_product_input_prefix }}_nwas_ascs_ha"
         sap_swpm_virtual_hostname: "{{ sap_swpm_ascs_instance_hostname }}"
-
+        sap_swpm_product_catalog_id: "{{ sap_swpm_templates_install_dictionary['sap_swpm_templates_product_input']['sap_swpm_product_catalog_id'] }}"
 
 
 - name: Ansible Play for SAP NetWeaver Application Server installation - Enqueue Replication Service (ERS) with Standalone Enqueue Server 2 (ENSA2)
