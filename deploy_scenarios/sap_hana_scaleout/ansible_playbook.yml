@@ -329,6 +329,7 @@
         sap_install_media_detect_kernel: false
         sap_install_media_detect_webdisp: false
         sap_install_media_detect_db: "saphana"
+      when: inventory_hostname_short == (groups['hana_primary'] | first)
 
     # For further details, see documentation 'SAP HANA Administration Guide for SAP HANA Platform - Add Hosts Using the Command-Line Interface'
     ## role - worker, standby etc.
