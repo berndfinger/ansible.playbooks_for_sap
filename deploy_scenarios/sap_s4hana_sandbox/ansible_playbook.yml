@@ -265,6 +265,13 @@
         sap_install_media_detect_db_client: "saphana"
         sap_install_media_detect_export: "saps4hana"
 
+    - name: Display certain variables
+      debug:
+        msg:
+          - "sap_swpm_db_sid = >{{ sap_swpm_db_sid }}"
+          - "sap_swpm_db_instance_nr = >{{ sap_swpm_db_instance_nr }}"
+          - "sap_swpm_db_host = >{{ sap_swpm_db_host }}"
+
     # Install SAP S/4HANA via Ansible Role sap_swpm
     - name: Execute Ansible Role sap_swpm
       ansible.builtin.include_role:
